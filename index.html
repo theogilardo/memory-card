@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Memory Card</title>
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body>
+    <header>Memory Cards</header>
+    <button id="btn-add" class="btn btn-add">+ Add a new card</button>
+    <button id="delete" class="btn btn-delete"><ion-icon class='trash-icon' name="trash-outline"></ion-icon>Clear Cards</button>
+    <div id="memory-card" class="memory-card">
+        <div id="memory-pos" class="memory-pos">
+            <ion-icon class="flip" id="flip" name="shuffle-outline"></ion-icon>
+            <div class="card" id="card">
+                <div id="front" class="front">
+                    <h1 class="question" id="question"></h1>
+                </div>
+                <div id="back" class="back">
+                    <h1 class="answer" id="answer"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p id="number-cards" class="number-cards"></p>
+    <ion-icon id="arrow-back" class="arrow-back" name="arrow-back-outline"></ion-icon>
+    <ion-icon id="arrow-front" class="arrow-front" name="arrow-forward-outline"></ion-icon>
+
+    <div id="add-container" class="add-container">
+        <h1 style="margin-bottom: 2rem">Add New Card <a href="#" id="cross-btn">x</a></h1>
+        <label for="question">Question</label>
+        <input id="question-input" type="text" name="question" placeholder="Enter question...">
+        <label for="answer">Answer</label>
+        <input id="answer-input" type="text" name="answer" placeholder="Enter answer...">
+        <button id="complete-card" class="btn">+ Add Card</button>
+    </div>
+  <script src="script.js" ></script>
+</body>
+</html>
